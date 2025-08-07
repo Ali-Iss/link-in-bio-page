@@ -1,0 +1,16 @@
+{
+  "name": "Ali Iss",
+  "bio": "Content creator sharing lifestyle & inspiration.",
+  "avatar": "./assets/Logo.png",
+  "alt": "A Logo of Ali Iss",
+  "links": [
+    { "label": "🎥 YouTube Channel", "url": "https://www.youtube.com/channel/UCJTlapuUSgc-9UdptpgA6Xw" },
+    { "label": "📸 Instagram", "url": "https://www.instagram.com/the_storycraft1/" },
+    { "label": "🎵 TikTok", "url": "https://www.tiktok.com/@the_storycraft1" },
+    { "label": "📰 Join Newsletter", "url": "https://online0learning.blogspot.com/" },
+    { "label": "🛍️ Online Store", "url": "https://online0learning.blogspot.com/" },
+    { "label": "📞 Contact on WhatsApp", "url": "https://wa.me/212602336546?text=Hello%2C%20I'm%20interested%20in%20your%20services!" }
+    
+  ]
+
+}

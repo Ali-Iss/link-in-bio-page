@@ -1,0 +1,82 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Ali Iss | Link in Bio" />
+  <meta property="og:description" content="All my important links in one place." />
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/Logo.png" type="image/png" />
+  
+  <!-- Viewport for Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <!-- Schema.org Markup for Google+ -->
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "Person",
+   "name": "Ali Iss",
+   "url": "https://yourdomain.com",
+   "sameAs": [
+     "https://www.instagram.com/the_storycraft1/",
+     "https://www.tiktok.com/@the_storycraft1",
+      "https://www.youtube.com/channel/UCJTlapuUSgc-9UdptpgA6Xw"
+    ]
+  }
+</script>
+
+  <!-- Title -->
+  <title>Link in Bio</title>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <img id="profile-pic" src="" loading="lazy" alt="">
+    <h1 id="profile-name">Loading...</h1>
+    <p id="bio"></p>
+    <button id="toggle-mode" class="mode-toggle">🌙</button>
+    <div id="links"></div>
+    <footer id="site-footer">Made by You | Need your own? Contact me.</footer>
+  </div>
+  <script>
+  const toggle = document.getElementById('toggle-mode');
+
+  // Apply saved theme on load
+  const savedMode = localStorage.getItem('theme');
+  if (savedMode === 'dark') {
+    document.body.classList.add('dark-mode');
+    toggle.textContent = '☀️';
+  } else {
+    toggle.textContent = '🌙';
+  }
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    const isDark = document.body.classList.contains('dark-mode');
+
+    // Save preference
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+    // Update icon
+    toggle.textContent = isDark ? '☀️' : '🌙';
+  });
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
